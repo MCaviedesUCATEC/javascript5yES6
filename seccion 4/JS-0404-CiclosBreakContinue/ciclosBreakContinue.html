@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciclos | Break y continue</title>
+	<meta charset="utf-8">
+	<script>
+		//continue
+		for (var i = 0; i < 10; i++) {
+			if (i%2==0) {
+				continue;
+			}
+			document.write("El valor de i es :"+i+"<br>");
+		}
+		//break
+		var numero = 0;
+		var intentos = 1;
+		var magico = 7;
+		while(numero!=magico){
+			numero = prompt("Adivina el número mágico entre 0 y 10 intento "+intentos+" de 3");
+			if (numero==magico) {
+				alert("El "+magico+" es el número mágico");
+				break;
+			}
+			//incrementamos
+			intentos++;
+			if (intentos==4) {
+				alert("Lo sentimos, eres muy mal adivinador");
+				break;
+			}
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

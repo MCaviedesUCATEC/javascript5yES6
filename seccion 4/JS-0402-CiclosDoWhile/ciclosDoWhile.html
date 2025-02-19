@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciclos Do.. While</title>
+	<meta charset="utf-8">
+	<script>
+		var clave="";
+		var i = 0;
+		do{
+			clave = prompt("Escribe tu clave de acceso");
+			i++;
+			if (clave=="007") {
+				document.write("Bienvenido agente 007");
+				break;
+			} 
+			if(i>3){
+				alert("Lo sentimos, no tiene acceso al sistema");
+				break;
+			}
+		}while(true)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
